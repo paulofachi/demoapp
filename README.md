@@ -29,6 +29,6 @@ APIs implementadas:
 
 (adicionais)
     /import - POST (Importa arquivo csv com a listagem de Filmes)
-        Enviar arqiuvo .csv na requisição da API (MultipartFile).
+              Enviar arqiuvo .csv na requisição da API (MultipartFile).
     /getProducersIntervals - GET (Retorna o Produtor com maior intervalo de premiação.)
     
