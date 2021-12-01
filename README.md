@@ -12,23 +12,38 @@ A API que retorna os intervalos das premiações conforme a solicitação é a (
 APIs implementadas:
 
 (CRUD)
+
 /api/producer
+
     /list - GET (Retorna a listagem completa de Produtores.)
+    
     /{id} - GET (Consulta um Produtore por id.)
+    
     /insert - POST (Cria um novo Produtore.)
+    
     /update - PUT (Atualiza o Produtore.)
+    
     /delete/{id} - DELETE (Deleta o Produtore.)
+    
 
 (CRUD)
+
 /api/movie
+
     /list - GET (Retorna a listagem completa de Filmes.)
+    
     /{id} - GET (Consulta um Filme por id.)
+    
     /insert - POST (Cria um novo Filme.)
+    
     /update - PUT (Atualiza o Filme.)
+    
     /delete/{id} - DELETE (Deleta o Filme.)
 
 (adicionais)
+
     /import - POST (Importa arquivo csv com a listagem de Filmes)
               Enviar arqiuvo .csv na requisição da API (MultipartFile).
+              
     /getProducersIntervals - GET (Retorna o Produtor com maior intervalo de premiação.)
     
