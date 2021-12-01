@@ -1,7 +1,8 @@
 A aplicação foi implementada na versão 8 do java.
 
-A importação do arquivo csv será feita via API, basta chamar a api (POST) "/api/movie/import" (Postman) enviando o arquivo na requisição.
-Caso o arquivo não seja enviado na requisição, a aplicação tentará importar à partir de  um arquivo do disco, 
+A importação do arquivo csv será feita via API, 
+basta chamar a api (POST) "/api/movie/import" (Postman) enviando o arquivo na requisição.
+Caso o arquivo não seja enviado na requisição, a aplicação tentará importar à partir de um arquivo do disco, 
 o caminho deste arquivo está no método "loadContentFromFile()" da classe MovieService.
 
 Na importação do arquivo, os dados das tabelas do banco de dados serão deletados e preenchidos novamente.
