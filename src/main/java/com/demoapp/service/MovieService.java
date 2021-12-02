@@ -162,14 +162,14 @@ public class MovieService {
     
     public Producer loadProducer(String name) {
         Query query = entityManager.createQuery("select p from Producer p where p.name = ?1");
-        query.setParameter(1, name.trim());
+        query.setParameter(1, name.trim().toUpperCase());
         Producer p = null;
         try {
             p = (Producer) query.getSingleResult();
         } catch (Exception e) { }
         if (p == null) {
             p = new Producer();
-            p.setName(name.trim());
+            p.setName(name.trim().toUpperCase());
             p = producerService.save(p);
         }
         return p;
